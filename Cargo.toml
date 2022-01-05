@@ -1,0 +1,17 @@
+[package]
+name = "metrology"
+version = "0.1.0"
+authors = ["Rex Kerr <ichoran@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }  # Storing results     
+
+serde_json = "1.0"    # Storing results
+# nalgebra = "0.18"   # Vectorized data operations, if needed
+nom = "4.2"           # For parsing data
+average = "~0.9.4"    # For statistics -- note: switch to statrs if more is needed
+# itertools = "0.8"   # Handy iterators, if needed
+# im-rc = "12.3.4"    # Handy immutable collections, if needed
+# ryu = "0.2.7"       # Incredibly fast serialization of reals, if it becomes limiting
+structopt = "~0.2.15" # Parse command-line into a struct
